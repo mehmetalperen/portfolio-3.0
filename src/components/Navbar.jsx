@@ -34,14 +34,12 @@ export default function Navbar() {
        
        
         .logo {
-          font-family: Karla;
           font-style: normal;
           font-weight: bold;
           font-size: 30px;
           line-height: 35px;
         }
         .navigation {
-            font-family: Karla;
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
@@ -61,7 +59,7 @@ export default function Navbar() {
 
     
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   .navigation-wrapper {
     display: none;
   }
