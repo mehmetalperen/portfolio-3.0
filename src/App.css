@@ -23,7 +23,9 @@ a:hover {
 h1:hover {
   cursor: pointer;
 }
-
+.btn {
+  padding: 15px;
+}
 .btn-dark:hover {
   background-color: #6c757d;
   border-color: #6c757d;
