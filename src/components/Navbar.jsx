@@ -59,14 +59,7 @@ export default function Navbar() {
           justify-content: space-between;
         }
 
-        @media only screen and (max-width: 650px) {
-  body {
-    padding: 0;
-  }
-  .logo-wrapper, .navigation-wrapper {
-      margin: 0 30px;
-  }
-}
+    
 
 @media only screen and (max-width: 550px) {
   .navigation-wrapper {
