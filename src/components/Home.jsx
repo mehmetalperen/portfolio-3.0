@@ -9,11 +9,11 @@ export default function Home() {
       <div className="greeding-wrapper">
         <h3 className="greeting-title">Hi, I'm Mehmet</h3>
         <p className="brief-intro">
-          Software Developer, second-year Computer Science majorg
+          Software Developer, second-year Computer Science major.
         </p>
         <p className="into-paragraph">
           I love creating UI designs and bringing them to life with the magic of
-          React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.g
+          React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
           <button type="button" className="btn btn-dark home-btns">
@@ -42,7 +42,6 @@ export default function Home() {
         }
         .pic {
           max-width: 250px;
-          border-radius: 10px;
         }
 
         .greeting-title {
@@ -56,7 +55,7 @@ export default function Home() {
         .brief-intro {
           font-style: normal;
           font-weight: 500;
-          font-size: 20px;
+          font-size: 17px;
           display: flex;
           flex-wrap: wrap;
           word-wrap: break-word;
@@ -99,6 +98,11 @@ export default function Home() {
             flex-wrap: wrap;
             justify-content: space-evenly;
             width: 100%;
+          }
+          .home-btns {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
           }
         }
       `}</style>
