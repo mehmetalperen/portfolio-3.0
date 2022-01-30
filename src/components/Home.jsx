@@ -70,7 +70,7 @@ export default function Home() {
           color: #000000;
         }
         .button-wrapper {
-          width: 60%;
+          width: 65%;
           min-width: fit-content;
           display: flex;
           justify-content: space-between;
@@ -96,13 +96,17 @@ export default function Home() {
           }
           .button-wrapper {
             flex-wrap: wrap;
-            justify-content: space-evenly;
             width: 100%;
           }
           .home-btns {
-            width: 100%;
+            width: 40%;
             margin-left: 0;
             margin-right: 0;
+          }
+        }
+        @media only screen and (max-width: 500px) {
+          .home-btns {
+            width: 100%;
           }
         }
       `}</style>
