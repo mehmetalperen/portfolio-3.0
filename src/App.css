@@ -4,14 +4,17 @@
   margin: 0;
   padding: 0; */
 }
-
+body {
+  padding: 0 10%;
+}
+@media only screen and (max-width: 650px) {
+  body {
+    padding: 0 30px;
+  }
+}
 a {
   text-decoration: none;
   color: black;
-}
-
-body {
-  padding: 0 10%;
 }
 
 a:hover {
