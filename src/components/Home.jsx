@@ -16,10 +16,10 @@ export default function Home() {
           React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.g
         </p>
         <div className="button-wrapper">
-          <button type="button" class="btn btn-dark home-btns">
+          <button type="button" className="btn btn-dark home-btns">
             Contect Me
           </button>
-          <button type="button" class="btn btn-outline-dark home-btns">
+          <button type="button" className="btn btn-outline-dark home-btns">
             My Work
           </button>
         </div>
