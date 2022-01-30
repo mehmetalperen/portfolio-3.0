@@ -1,6 +1,22 @@
 * {
-  font-family: "Mulish", sans-serif;
-  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  /* box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 0 10%;
+}
+
+a:hover {
+  color: #6c757d;
+}
+h1:hover {
+  cursor: pointer;
 }
