@@ -59,14 +59,14 @@ export default function Navbar() {
 
     
 
-@media only screen and (max-width: 500px) {
-  .navigation-wrapper {
-    display: none;
-  }
-}
+        @media only screen and (max-width: 500px) {
+          .navigation-wrapper {
+            display: none;
+          }
+        }
 
 
-}
+          }
       `}</style>
     </div>
   );
