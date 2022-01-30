@@ -7,7 +7,7 @@
 body {
   padding: 0 10%;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 870px) {
   body {
     padding: 0 30px;
   }
@@ -22,4 +22,19 @@ a:hover {
 }
 h1:hover {
   cursor: pointer;
+}
+
+.btn-dark:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-dark {
+  min-width: 200px;
+}
+.btn-outline-dark:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-outline-dark {
+  min-width: 200px;
 }
