@@ -19,7 +19,7 @@ export default function MyWorkSection() {
       </div>
       <style jsx>{`
         .my-work-section {
-          min-height: 100vh;
+          margin: 50px auto;
         }
         .section-divider {
           border: 0.25px solid #000000;

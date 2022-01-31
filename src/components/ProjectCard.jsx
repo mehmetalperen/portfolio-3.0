@@ -1,7 +1,7 @@
 import React from "react";
 import TagWrapper from "./TagWrapper";
 
-export default function ProjectCard() {
+export default function ProjectCard(props) {
   return (
     <div className="project-card m-3 mt-5">
       <div className="pj-img-wrapper">
@@ -18,7 +18,9 @@ export default function ProjectCard() {
 
       <div className="pj-description">
         <p className="discription">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit elit elit.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
+          illo! Beatae, eum, distinctio alias quae numquam a incidunt{" "}
+          {props.description}
         </p>
       </div>
       <div className="pj-action-btn-container">

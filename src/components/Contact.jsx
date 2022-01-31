@@ -21,7 +21,7 @@ export default function Contact() {
       </div>
       <style jsx>{`
         .contact-wrapper {
-          height: 200px;
+          min-height: 200px;
           display: flex;
           justify-content: space-around;
           padding: 50px auto;
