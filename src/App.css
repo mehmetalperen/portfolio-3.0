@@ -33,12 +33,18 @@ h1:hover {
   border-color: #6c757d;
 }
 .btn-dark {
-  min-width: 200px;
+  width: 200px;
 }
 .btn-outline-dark:hover {
   background-color: #6c757d;
   border-color: #6c757d;
 }
 .btn-outline-dark {
-  min-width: 200px;
+  width: 200px;
+}
+.card {
+  border-radius: 10px;
+}
+.btn {
+  border-radius: 10px !important;
 }

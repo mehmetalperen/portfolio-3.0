@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
 
 export default function MyWorkSection() {
   return (
@@ -9,21 +10,15 @@ export default function MyWorkSection() {
       </div>
 
       <div className="my-work-wrapper">
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
-        <h3 className="section-title">My Work</h3>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </div>
       <style jsx>{`
         .my-work-section {
-          border-style: dashed;
-          border-width: 1px;
-          border-color: red;
           min-height: 100vh;
         }
         .section-divider {
@@ -31,22 +26,20 @@ export default function MyWorkSection() {
           margin: 30px 0 10px 0;
         }
         .section-title-wrapper {
-          border-style: dashed;
-          border-width: 1px;
-          border-color: blue;
         }
         .section-title {
           font-style: normal;
           font-weight: bold;
           font-size: 30px;
           line-height: 47px;
+          text-decoration: underline;
         }
 
         .my-work-wrapper {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
-          justify-content: space-between;
+          justify-content: space-evenly;
         }
       `}</style>
     </div>

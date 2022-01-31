@@ -91,8 +91,9 @@ export default function Home() {
             justify-content: center;
           }
           .greeding-wrapper {
-            width: 100%;
+            min-width: 100%;
             margin: 0;
+            padding: 0;
           }
           .button-wrapper {
             flex-wrap: wrap;
