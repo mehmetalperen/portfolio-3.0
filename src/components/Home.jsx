@@ -16,12 +16,18 @@ export default function Home() {
           React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
-          <button type="button" className="btn btn-dark home-btns">
+          <a
+            href="https://flamboyant-dubinsky-730d49.netlify.app/"
+            className="btn btn-dark home-btns"
+          >
             Contect Me
-          </button>
-          <button type="button" className="btn btn-outline-dark home-btns">
+          </a>
+          <a
+            href="https://flamboyant-dubinsky-730d49.netlify.app/"
+            className="btn btn-outline-dark home-btns"
+          >
             My Work
-          </button>
+          </a>
         </div>
       </div>
       <style jsx>{`

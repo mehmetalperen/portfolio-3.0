@@ -24,12 +24,18 @@ export default function ProjectCard(props) {
         </p>
       </div>
       <div className="pj-action-btn-container">
-        <button type="button" className="btn btn-dark pj-action-btns">
+        <a
+          href="https://flamboyant-dubinsky-730d49.netlify.app/"
+          className="btn btn-dark pj-action-btns"
+        >
           <img src="eye 1.svg" alt="" className="btn-icon" />
-        </button>
-        <button type="button" className="btn btn-outline-dark pj-action-btns">
+        </a>
+        <a
+          href="https://flamboyant-dubinsky-730d49.netlify.app/"
+          className="btn btn-outline-dark pj-action-btns"
+        >
           <img src="github 1.svg" alt="" className="btn-icon" />
-        </button>
+        </a>
       </div>
       <style jsx>{`
         .project-card {
