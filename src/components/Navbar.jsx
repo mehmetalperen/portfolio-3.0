@@ -30,6 +30,12 @@ export default function Navbar() {
             display: flex;
             justify-content: space-between;
             padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: white;
+            border-radius: 0;
+       
         }
        
        
