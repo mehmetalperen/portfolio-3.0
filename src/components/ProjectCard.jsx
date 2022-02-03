@@ -17,7 +17,7 @@ export default function ProjectCard(props) {
       <TagWrapper />
 
       <div className="pj-description">
-        <p className="discription">
+        <p className="description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
           illo! Beatae, eum, distinctio alias quae numquam a incidunt{" "}
           {props.description}
@@ -84,7 +84,7 @@ export default function ProjectCard(props) {
 
           color: #000000;
         }
-        .discription {
+        .description {
           font-weight: 400;
           font-size: 16px;
           line-height: 20px;
