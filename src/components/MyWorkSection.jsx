@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import projects from "../JS/projects";
 export default function MyWorkSection() {
   return (
-    <div className="my-work-section">
+    <div id="my-work-section-id" className="my-work-section">
       <div className="section-divider" />
       <div className="section-title-wrapper">
         <h3 className="section-title">My Work</h3>

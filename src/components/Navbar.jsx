@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="navbar">
       <div className="logo-wrapper">
         <a className="logo-link">
-          <Link to="home" smooth={true} duration={1000}>
+          <Link to="home-id" duration={500}>
             <h1 className="logo">Mehmet Nadi</h1>
           </Link>
         </a>
@@ -14,12 +14,12 @@ export default function Navbar() {
 
       <div className="navigation-wrapper">
         <a href="" className="navigation">
-          <Link to="work-section" smooth={true} duration={1000}>
+          <Link to="my-work-section-id" duration={500}>
             Work
           </Link>
         </a>
         <a href="" className="navigation">
-          <Link to="contact-section" smooth={true} duration={1000}>
+          <Link to="contact-section-id" duration={500}>
             Contact
           </Link>
         </a>

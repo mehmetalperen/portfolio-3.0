@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div id="home-id" className="home">
       <div className="img-wrapper">
         <img src="my-pic.jpg" alt="" className="pic" />
       </div>
