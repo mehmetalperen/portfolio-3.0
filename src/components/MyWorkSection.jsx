@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-
+import projects from "../JS/projects";
 export default function MyWorkSection() {
   return (
     <div className="my-work-section">
@@ -10,12 +10,9 @@ export default function MyWorkSection() {
       </div>
 
       <div className="my-work-wrapper">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects.map((project, index) => {
+          return <ProjectCard key={index} projectObj={project} />;
+        })}
       </div>
       <style jsx>{`
         .my-work-section {
@@ -37,7 +34,7 @@ export default function MyWorkSection() {
 
         .my-work-wrapper {
           display: flex;
-          align-items: center;
+          align-items: stretch;
           flex-wrap: wrap;
           justify-content: space-evenly;
         }

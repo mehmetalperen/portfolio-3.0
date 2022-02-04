@@ -2,37 +2,50 @@ import React from "react";
 import TagWrapper from "./TagWrapper";
 
 export default function ProjectCard(props) {
+  /**
+   * imgURL
+   * imgAlt
+   * pjName
+   * pjDectiption
+   * pjPreviewURL
+   * pjGitHubURL
+   */
+
   return (
-    <div className="project-card m-3 mt-5">
+    <div className="project-card card border-0 m-3 mt-5 flex-fill">
       <div className="pj-img-wrapper">
         <div className="pj-img-container">
           <div className="img-filter"></div>
-          <img src="counselHero-pic.png" alt="" className="pj-img" />
+          <img
+            src={props.projectObj.imgURL}
+            alt={props.projectObj.imgAlt}
+            className="pj-img"
+          />
         </div>
       </div>
 
       <div className="pj-name-wrapper">
-        <h6 className="pj-name">pj name</h6>
+        <h6 className="pj-name">{props.projectObj.pjName}</h6>
       </div>
       <TagWrapper />
 
       <div className="pj-description">
-        <p className="description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
-          illo! Beatae, eum, distinctio alias quae numquam a incidunt{" "}
-          {props.description}
-        </p>
+        <p className="description">{props.projectObj.pjDescription}</p>
       </div>
-      <div className="pj-action-btn-container">
+      <div className="pj-action-btn-container h-100">
         <a
-          href="https://flamboyant-dubinsky-730d49.netlify.app/"
-          className="btn btn-dark pj-action-btns"
+          href={props.projectObj.pjPreviewURL}
+          className={`btn btn-dark pj-action-btns ${
+            props.projectObj.pjPreviewURL === null ? "disabledBtn" : ""
+          }`}
         >
           <img src="eye 1.svg" alt="" className="btn-icon" />
         </a>
         <a
-          href="https://flamboyant-dubinsky-730d49.netlify.app/"
-          className="btn btn-outline-dark pj-action-btns"
+          href={props.projectObj.pjGitHubURL}
+          className={`btn btn-outline-dark pj-action-btns ${
+            props.projectObj.pjGitHubURL === null ? "disabledBtn" : ""
+          }`}
         >
           <img src="github 1.svg" alt="" className="btn-icon" />
         </a>
@@ -40,17 +53,17 @@ export default function ProjectCard(props) {
       <style jsx>{`
         .project-card {
           flex-wrap: nowrap;
-          justify-content: center;
           margin: 20px auto;
           min-width: 300px;
           width: 20%;
-          height: fit-content;
+          align-items: stretch;
         }
 
         .pj-img-wrapper {
           width: 100%;
           z-index: 10;
           background: #6c757d;
+          align-items: stretch;
         }
         .pj-img-container {
           position: relative;
@@ -98,9 +111,17 @@ export default function ProjectCard(props) {
           padding: 0;
           justify-content: space-between;
           margin: 6px 0;
+          align-items: end;
         }
         .pj-action-btns {
           width: 45%;
+          max-height: 60px;
+        }
+        .disabledBtn {
+          border: 1px solid black;
+          background-color: #6c757d;
+          color: black;
+          cursor: not-allowed;
         }
       `}</style>
     </div>
