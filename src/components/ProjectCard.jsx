@@ -76,6 +76,7 @@ export default function ProjectCard(props) {
       </div>
       <div className="pj-action-btn-container h-100">
         <a
+          target="_blank"
           href={props.projectObj.pjPreviewURL}
           className={`btn btn-dark pj-action-btns ${
             props.projectObj.pjPreviewURL === null ? "disabledBtn" : ""
@@ -93,6 +94,7 @@ export default function ProjectCard(props) {
         </a>
         <a
           href={props.projectObj.pjGitHubURL}
+          target="_blank"
           className={`btn btn-outline-dark pj-action-btns ${
             props.projectObj.pjGitHubURL === null ? "disabledBtn" : ""
           }`}
