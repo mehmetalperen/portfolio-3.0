@@ -14,7 +14,7 @@ export default function ProjectCard(props) {
     setIsShowMoreTags(!isShowMoreTags);
   };
   return (
-    <div className="project-card card border-0 m-3 mt-5 flex-fill">
+    <div className="project-card card border-0 m-3 mt-3 flex-fill">
       <div className="pj-img-wrapper">
         <div className="pj-img-container">
           <div className="img-filter"></div>
@@ -41,7 +41,7 @@ export default function ProjectCard(props) {
                       onClick={() => {
                         handleShowMoreTags();
                       }}
-                    >{`+ ${props.projectObj.techUsed.length - 5}`}</a>
+                    >{`+${props.projectObj.techUsed.length - 5}`}</a>
                   </div>
                 ) : null}
               </div>
@@ -74,7 +74,7 @@ export default function ProjectCard(props) {
       <div className="pj-description">
         <p className="description">{props.projectObj.pjDescription}</p>
       </div>
-      <div className="pj-action-btn-container h-100">
+      <div className="pj-action-btn-container">
         <a
           target="_blank"
           href={props.projectObj.pjPreviewURL}
@@ -144,10 +144,10 @@ export default function ProjectCard(props) {
           left: 0;
           bottom: 0;
           background: rgba(173, 181, 189, 0.65);
-          -webkit-transition: background-color 1s ease-out;
-          -moz-transition: background-color 1s ease-out;
-          -o-transition: background-color 1s ease-out;
-          transition: background-color 1s ease-out;
+          -webkit-transition: background-color 600ms ease-out;
+          -moz-transition: background-color 600ms ease-out;
+          -o-transition: background-color 600ms ease-out;
+          transition: background-color 600ms ease-out;
         }
 
         .project-card:hover .img-filter {
@@ -176,8 +176,21 @@ export default function ProjectCard(props) {
           display: flex;
           padding: 0;
           justify-content: space-between;
+          overflow: hidden;
           margin: 6px 0;
           align-items: end;
+          opacity: 0;
+          height: 0;
+          visibility: hidden;
+          -webkit-transition: opacity 1000ms ease-out,
+            visibility 1000ms ease-out, height 1000ms ease-out;
+          transition: opacity 1000ms ease-out, visibility 1000ms ease-out,
+            height 1000ms ease-out;
+        }
+        .project-card:hover .pj-action-btn-container {
+          visibility: visible;
+          opacity: 1;
+          height: auto;
         }
         .pj-action-btns {
           width: 45%;
