@@ -144,10 +144,10 @@ export default function ProjectCard(props) {
           left: 0;
           bottom: 0;
           background: rgba(173, 181, 189, 0.65);
-          -webkit-transition: background-color 1s ease-out;
-          -moz-transition: background-color 1s ease-out;
-          -o-transition: background-color 1s ease-out;
-          transition: background-color 1s ease-out;
+          -webkit-transition: background-color 600ms ease-out;
+          -moz-transition: background-color 600ms ease-out;
+          -o-transition: background-color 600ms ease-out;
+          transition: background-color 600ms ease-out;
         }
 
         .project-card:hover .img-filter {
@@ -182,8 +182,10 @@ export default function ProjectCard(props) {
           opacity: 0;
           height: 0;
           visibility: hidden;
-          -webkit-transition: opacity 1000ms, visibility 1000ms, height 1000ms;
-          transition: opacity 1000ms, visibility 1000ms, height 1000ms;
+          -webkit-transition: opacity 1000ms ease-out,
+            visibility 1000ms ease-out, height 1000ms ease-out;
+          transition: opacity 1000ms ease-out, visibility 1000ms ease-out,
+            height 1000ms ease-out;
         }
         .project-card:hover .pj-action-btn-container {
           visibility: visible;
