@@ -9,13 +9,21 @@ export default function Contact() {
       </div>
 
       <div className="contact-wrapper">
-        <a href="" className="contact-href">
+        <a href="mailto:mhmtalperennadi@gmail.com" className="contact-href">
           <img src="email 1.svg" alt="" className="contact-icon" />
         </a>
-        <a href="" className="contact-href">
+        <a
+          href="https://www.linkedin.com/in/mehmet-nadi-03372a1b1/"
+          target="_blank"
+          className="contact-href"
+        >
           <img src="linkedin 1.svg" alt="" className="contact-icon" />
         </a>
-        <a href="" className="contact-href">
+        <a
+          href="https://github.com/mehmetalperen"
+          target="_blank"
+          className="contact-href"
+        >
           <img src="github.svg" alt="" className="contact-icon" />
         </a>
       </div>
