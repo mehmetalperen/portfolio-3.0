@@ -116,9 +116,11 @@ export default function ProjectCard(props) {
         }
         .tag-show-more-link {
           margin: 2px 5px;
+          color: #6c757d;
         }
         .tag-show-more-link:hover {
           cursor: pointer;
+          color: black;
         }
         .pj-img-wrapper {
           width: 100%;
