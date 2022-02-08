@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TagWrapper from "./TagWrapper";
 
 export default function ProjectCard(props) {
-  /**
-   * imgURL
-   * imgAlt
-   * pjName
-   * pjDectiption
-   * pjPreviewURL
-   * pjGitHubURL
-   */
+  const [isShowMoreTags, setIsShowMoreTags] = useState(false);
 
+  useEffect(() => {
+    if (props.projectObj.techUsed.length > 5) {
+      setIsShowMoreTags(false);
+    }
+  }, []);
+
+  const handleShowMoreTags = () => {
+    setIsShowMoreTags(!isShowMoreTags);
+  };
   return (
     <div className="project-card card border-0 m-3 mt-5 flex-fill">
       <div className="pj-img-wrapper">
@@ -29,8 +31,44 @@ export default function ProjectCard(props) {
       </div>
       <div className="pj-tags-wrapper">
         {props.projectObj.techUsed.map((tech, index) => {
+          if (index === 4 && props.projectObj.techUsed.length > 5) {
+            return (
+              <div>
+                {!isShowMoreTags ? (
+                  <div>
+                    <a
+                      className="tag-show-more-link btn-link"
+                      onClick={() => {
+                        handleShowMoreTags();
+                      }}
+                    >{`+ ${props.projectObj.techUsed.length - 5}`}</a>
+                  </div>
+                ) : null}
+              </div>
+            );
+          } else if (index > 4) {
+            return (
+              <div>
+                {isShowMoreTags ? (
+                  <div>
+                    <TagWrapper techName={tech} />
+                  </div>
+                ) : null}
+              </div>
+            );
+          }
           return <TagWrapper techName={tech} />;
         })}
+        {props.projectObj.techUsed.length > 4 && isShowMoreTags ? (
+          <div>
+            <a
+              className="tag-show-more-link btn-link"
+              onClick={() => {
+                handleShowMoreTags();
+              }}
+            >{`Hide`}</a>
+          </div>
+        ) : null}
       </div>
 
       <div className="pj-description">
@@ -67,6 +105,12 @@ export default function ProjectCard(props) {
           flex-wrap: wrap;
           align-items: center;
           margin: 6px 0;
+        }
+        .tag-show-more-link {
+          margin: 2px 5px;
+        }
+        .tag-show-more-link:hover {
+          cursor: pointer;
         }
         .pj-img-wrapper {
           width: 100%;
@@ -127,10 +171,19 @@ export default function ProjectCard(props) {
           max-height: 60px;
         }
         .disabledBtn {
-          border: 1px solid black;
-          background-color: #6c757d;
+          border: 1px solid #adb5bd;
+          background: repeating-linear-gradient(
+            45deg,
+            #6c757d,
+            #6c757d 10px,
+            #adb5bd 10px,
+            #adb5bd 20px
+          );
           color: black;
           cursor: not-allowed;
+        }
+        .disabledBtn:hover {
+          border: 1px solid #adb5bd;
         }
       `}</style>
     </div>
