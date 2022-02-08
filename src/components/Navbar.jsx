@@ -6,7 +6,11 @@ export default function Navbar() {
     <div className="navbar">
       <div className="logo-wrapper">
         <a className="logo-link">
-          <Link to="home-id" duration={500}>
+          <Link
+            to="home-id"
+            duration={500}
+            data-splitbee-event="Name logo clicked to navigate to intro section"
+          >
             <h1 className="logo">Mehmet Nadi</h1>
           </Link>
         </a>
@@ -14,12 +18,20 @@ export default function Navbar() {
 
       <div className="navigation-wrapper">
         <a href="" className="navigation">
-          <Link to="my-work-section-id" duration={500}>
+          <Link
+            to="my-work-section-id"
+            duration={500}
+            data-splitbee-event="work link on nav clicked"
+          >
             Work
           </Link>
         </a>
         <a href="" className="navigation">
-          <Link to="contact-section-id" duration={500}>
+          <Link
+            to="contact-section-id"
+            duration={500}
+            data-splitbee-event="contact link on nav clicked"
+          >
             Contact
           </Link>
         </a>
