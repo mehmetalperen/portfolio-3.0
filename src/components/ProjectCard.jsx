@@ -38,6 +38,7 @@ export default function ProjectCard(props) {
                   <div>
                     <a
                       className="tag-show-more-link btn-link"
+                      data-splitbee-event="show more tags link clicked"
                       onClick={() => {
                         handleShowMoreTags();
                       }}
@@ -63,6 +64,7 @@ export default function ProjectCard(props) {
           <div>
             <a
               className="tag-show-more-link btn-link"
+              data-splitbee-event="hide tags clicked"
               onClick={() => {
                 handleShowMoreTags();
               }}
@@ -78,6 +80,7 @@ export default function ProjectCard(props) {
         <a
           target="_blank"
           href={props.projectObj.pjPreviewURL}
+          data-splitbee-event={`${props.projectObj.pjName} preview opened`}
           className={`btn btn-dark pj-action-btns ${
             props.projectObj.pjPreviewURL === null ? "disabledBtn" : ""
           }`}
@@ -94,6 +97,7 @@ export default function ProjectCard(props) {
         </a>
         <a
           href={props.projectObj.pjGitHubURL}
+          data-splitbee-event={`${props.projectObj.pjName} github opened`}
           target="_blank"
           className={`btn btn-outline-dark pj-action-btns ${
             props.projectObj.pjGitHubURL === null ? "disabledBtn" : ""
