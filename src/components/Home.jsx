@@ -101,7 +101,6 @@ export default function Home() {
             width: 100%;
           }
           .home-btns {
-            width: 40%;
             margin-left: 0;
             margin-right: 0;
           }
