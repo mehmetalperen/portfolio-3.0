@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TagWrapper from "./TagWrapper";
-
+import { Collapse } from "react-bootstrap";
 export default function ProjectCard(props) {
   const [isShowMoreTags, setIsShowMoreTags] = useState(false);
 
@@ -49,11 +49,11 @@ export default function ProjectCard(props) {
           } else if (index > 4) {
             return (
               <div>
-                {isShowMoreTags ? (
+                <Collapse in={isShowMoreTags}>
                   <div>
                     <TagWrapper techName={tech} />
                   </div>
-                ) : null}
+                </Collapse>
               </div>
             );
           }
