@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
@@ -16,18 +17,12 @@ export default function Home() {
           React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
-          <a
-            href="https://flamboyant-dubinsky-730d49.netlify.app/"
-            className="btn btn-dark home-btns"
-          >
-            Contect Me
-          </a>
-          <a
-            href="https://flamboyant-dubinsky-730d49.netlify.app/"
-            className="btn btn-outline-dark home-btns"
-          >
-            My Work
-          </a>
+          <Link to="contact-section-id" duration={500}>
+            <a className="btn btn-dark home-btns">Contact Me</a>
+          </Link>
+          <Link to="my-work-section-id" duration={500}>
+            <a className="btn btn-outline-dark home-btns">My Work</a>
+          </Link>
         </div>
       </div>
       <style jsx>{`
