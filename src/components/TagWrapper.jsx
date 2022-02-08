@@ -23,6 +23,10 @@ export default function TagWrapper(props) {
           border-radius: 25px;
           color: #ffffff;
         }
+        .tag {
+          margin: 0 auto;
+          padding: 0 auto;
+        }
       `}</style>
     </div>
   );

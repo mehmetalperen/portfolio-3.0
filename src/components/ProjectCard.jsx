@@ -112,6 +112,7 @@ export default function ProjectCard(props) {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
+          text-align: center;
           margin: 6px 0;
         }
         .tag-show-more-link {
