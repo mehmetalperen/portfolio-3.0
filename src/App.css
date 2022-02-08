@@ -1,3 +1,50 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Karla", sans-serif;
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
+  border-radius: 10px;
+}
+body {
+  padding: 0 10%;
+}
+@media only screen and (max-width: 870px) {
+  body {
+    padding: 0 30px;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #6c757d;
+}
+h1:hover {
+  cursor: pointer;
+}
+.btn {
+  padding: 15px;
+  border-radius: 10px;
+}
+.btn-dark:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-dark {
+  width: 200px;
+}
+.btn-outline-dark:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-outline-dark {
+  width: 200px;
+}
+.card {
+  border-radius: 10px;
+}
+.btn {
+  border-radius: 10px !important;
 }
