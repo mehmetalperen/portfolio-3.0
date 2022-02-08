@@ -81,7 +81,15 @@ export default function ProjectCard(props) {
             props.projectObj.pjPreviewURL === null ? "disabledBtn" : ""
           }`}
         >
-          <img src="eye 1.svg" alt="" className="btn-icon" />
+          <img
+            src={
+              props.projectObj.pjPreviewURL === null
+                ? "black-preview-icon.svg"
+                : "eye 1.svg"
+            }
+            alt=""
+            className="btn-icon"
+          />
         </a>
         <a
           href={props.projectObj.pjGitHubURL}
@@ -179,7 +187,6 @@ export default function ProjectCard(props) {
             #adb5bd 10px,
             #adb5bd 20px
           );
-          color: black;
           cursor: not-allowed;
         }
         .disabledBtn:hover {
