@@ -1,30 +1,13 @@
 import React from "react";
 
-export default function TagWrapper() {
+export default function TagWrapper(props) {
   return (
-    <div className="pj-tags-wrapper">
+    <div className="">
       <div className="tag-container">
-        <p className="tag">React</p>
-      </div>
-
-      <div className="tag-container">
-        <p className="tag">TypeScript</p>
-      </div>
-      <div className="tag-container">
-        <p className="tag">React</p>
-      </div>
-      <div className="tag-container">
-        <p className="tag">React</p>
+        <p className="tag">{props.techName}</p>
       </div>
 
       <style jsx>{`
-        .pj-tags-wrapper {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
-          margin: 6px 0;
-        }
         .tag-container {
           display: flex;
           justify-content: center;
@@ -32,7 +15,7 @@ export default function TagWrapper() {
 
           width: 60px;
           height: 16px;
-          margin: 1px auto 0 0;
+          margin: 2px 5px;
           padding: 1px 0 0 0;
           font-weight: 500;
           font-size: 8px;

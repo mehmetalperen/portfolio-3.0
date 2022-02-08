@@ -27,7 +27,11 @@ export default function ProjectCard(props) {
       <div className="pj-name-wrapper">
         <h6 className="pj-name">{props.projectObj.pjName}</h6>
       </div>
-      <TagWrapper />
+      <div className="pj-tags-wrapper">
+        {props.projectObj.techUsed.map((tech, index) => {
+          return <TagWrapper techName={tech} />;
+        })}
+      </div>
 
       <div className="pj-description">
         <p className="description">{props.projectObj.pjDescription}</p>
@@ -58,7 +62,12 @@ export default function ProjectCard(props) {
           width: 20%;
           align-items: stretch;
         }
-
+        .pj-tags-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin: 6px 0;
+        }
         .pj-img-wrapper {
           width: 100%;
           z-index: 10;
