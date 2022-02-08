@@ -41,7 +41,7 @@ export default function ProjectCard(props) {
                       onClick={() => {
                         handleShowMoreTags();
                       }}
-                    >{`+ ${props.projectObj.techUsed.length - 5}`}</a>
+                    >{`+${props.projectObj.techUsed.length - 5}`}</a>
                   </div>
                 ) : null}
               </div>
