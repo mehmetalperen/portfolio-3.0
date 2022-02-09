@@ -17,18 +17,10 @@ export default function Home() {
           React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
-          <Link
-            to="contact-section-id"
-            duration={500}
-            data-splitbee-event="Navigate to contect me. Intro section btn"
-          >
+          <Link to="contact-section-id" duration={500}>
             <a className="btn btn-dark home-btns">Contact Me</a>
           </Link>
-          <Link
-            to="my-work-section-id"
-            duration={500}
-            data-splitbee-event="Navigate to my work section. Intro section btn"
-          >
+          <Link to="my-work-section-id" duration={500}>
             <a className="btn btn-outline-dark home-btns">My Work</a>
           </Link>
         </div>
