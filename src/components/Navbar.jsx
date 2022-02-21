@@ -6,36 +6,37 @@ export default function Navbar() {
     <div className="navbar">
       <div className="logo-wrapper">
         <a
+          href="#home-id"
           className="logo-link"
           data-splitbee-event="Button Click"
           data-splitbee-event-planType="Home btn navbar"
         >
-          <Link to="home-id" duration={500}>
-            <h1 className="logo">Mehmet Nadi</h1>
-          </Link>
+          {/* <Link to="home-id" duration={500}> */}
+          <h1 className="logo">Mehmet Nadi</h1>
+          {/* </Link> */}
         </a>
       </div>
 
       <div className="navigation-wrapper">
         <a
-          href=""
+          href="#my-work-section-id"
           className="navigation"
           data-splitbee-event="Button Click"
           data-splitbee-event-planType="Work btn navbar"
         >
-          <Link to="my-work-section-id" duration={500}>
-            Work
-          </Link>
+          {/* <Link to="my-work-section-id" duration={500}> */}
+          Work
+          {/* </Link> */}
         </a>
         <a
-          href=""
+          href="#contact-section-id"
           className="navigation"
           data-splitbee-event="Button Click"
           data-splitbee-event-planType="Contact btn navbar"
         >
-          <Link to="contact-section-id" duration={500}>
-            Contact
-          </Link>
+          {/* <Link to="contact-section-id" duration={500}> */}
+          Contact
+          {/* </Link> */}
         </a>
       </div>
       <style jsx>{`
