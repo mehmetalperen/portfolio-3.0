@@ -17,24 +17,26 @@ export default function Home() {
           React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
-          <Link to="contact-section-id" duration={500}>
-            <a
-              className="btn btn-dark home-btns"
-              data-splitbee-event="Button Click"
-              data-splitbee-event-planType="Contact btn Home section"
-            >
-              Contact Me
-            </a>
-          </Link>
-          <Link to="my-work-section-id" duration={500}>
-            <a
-              className="btn btn-outline-dark home-btns"
-              data-splitbee-event="Button Click"
-              data-splitbee-event-planType="Work btn home section"
-            >
-              My Work
-            </a>
-          </Link>
+          {/* <Link to="contact-section-id" duration={500}> */}
+          <a
+            href="#contact-section-id"
+            className="btn btn-dark home-btns"
+            data-splitbee-event="Button Click"
+            data-splitbee-event-planType="Contact btn Home section"
+          >
+            Contact Me
+          </a>
+          {/* </Link> */}
+          {/* <Link to="my-work-section-id" duration={500}> */}
+          <a
+            href="#my-work-section-id"
+            className="btn btn-outline-dark home-btns"
+            data-splitbee-event="Button Click"
+            data-splitbee-event-planType="Work btn home section"
+          >
+            My Work
+          </a>
+          {/* </Link> */}
         </div>
       </div>
       <style jsx>{`

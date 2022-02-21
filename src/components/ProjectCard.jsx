@@ -200,6 +200,9 @@ export default function ProjectCard(props) {
           width: 45%;
           max-height: 60px;
         }
+        .pj-action-btns:focus {
+          box-shadow: none;
+        }
         .disabledBtn {
           border: 1px solid #adb5bd;
           background: repeating-linear-gradient(
