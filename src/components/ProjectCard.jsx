@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TagWrapper from "./TagWrapper";
 import { Collapse } from "react-bootstrap";
+
 export default function ProjectCard(props) {
   const [isShowMoreTags, setIsShowMoreTags] = useState(false);
 
@@ -212,10 +213,21 @@ export default function ProjectCard(props) {
             #adb5bd 10px,
             #adb5bd 20px
           );
+          pointer-events: none;
           cursor: not-allowed;
         }
-        .disabledBtn:hover {
-          border: 1px solid #adb5bd;
+        @media only screen and (max-width: 870px) {
+          .pj-action-btn-container {
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            overflow: hidden;
+            margin: 6px 0;
+            align-items: end;
+            opacity: 1;
+            height: 100%;
+            visibility: visible;
+          }
         }
       `}</style>
     </div>
