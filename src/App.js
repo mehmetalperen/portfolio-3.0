@@ -20,8 +20,6 @@ function App() {
 
   return (
     <div className="App">
-      <script async src="https://cdn.splitbee.io/sb.js"></script>
-
       <Navbar />
       <Home />
       <MyWorkSection />
