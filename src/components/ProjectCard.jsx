@@ -76,6 +76,8 @@ export default function ProjectCard(props) {
       </div>
       <div className="pj-action-btn-container">
         <a
+          data-splitbee-event="Button Click"
+          data-splitbee-event-planType={`${props.projectObj.pjName} see preview`}
           target="_blank"
           href={props.projectObj.pjPreviewURL}
           className={`btn btn-dark pj-action-btns ${
@@ -93,6 +95,8 @@ export default function ProjectCard(props) {
           />
         </a>
         <a
+          data-splitbee-event="Button Click"
+          data-splitbee-event-planType={`${props.projectObj.pjName} see github`}
           href={props.projectObj.pjGitHubURL}
           target="_blank"
           className={`btn btn-outline-dark pj-action-btns ${

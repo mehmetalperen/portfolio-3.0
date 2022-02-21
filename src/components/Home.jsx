@@ -18,10 +18,22 @@ export default function Home() {
         </p>
         <div className="button-wrapper">
           <Link to="contact-section-id" duration={500}>
-            <a className="btn btn-dark home-btns">Contact Me</a>
+            <a
+              className="btn btn-dark home-btns"
+              data-splitbee-event="Button Click"
+              data-splitbee-event-planType="Contact btn Home section"
+            >
+              Contact Me
+            </a>
           </Link>
           <Link to="my-work-section-id" duration={500}>
-            <a className="btn btn-outline-dark home-btns">My Work</a>
+            <a
+              className="btn btn-outline-dark home-btns"
+              data-splitbee-event="Button Click"
+              data-splitbee-event-planType="Work btn home section"
+            >
+              My Work
+            </a>
           </Link>
         </div>
       </div>
