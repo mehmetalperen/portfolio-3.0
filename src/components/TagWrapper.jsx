@@ -13,10 +13,10 @@ export default function TagWrapper(props) {
           justify-content: center;
           text-align: center;
 
-          width: 60px;
+          min-width: 60px;
           height: 16px;
           margin: 2px 5px;
-          padding: 1px 0 0 0;
+          padding: 1px;
           font-weight: 500;
           font-size: 8px;
           background: #6c757d;
@@ -24,7 +24,7 @@ export default function TagWrapper(props) {
           color: #ffffff;
         }
         .tag {
-          margin: 0 auto;
+          margin: 0 2px;
           padding: 0 auto;
         }
       `}</style>

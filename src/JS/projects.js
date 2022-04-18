@@ -69,15 +69,14 @@ export default [
     techUsed: ["Figma", "HTML", "CSS", "UI-design"],
   },
   {
-    imgURL: "mentor-base-parent-pic.png",
-    imgAlt: "Mentor-base figma desing",
-    pjName: "MentorBase, Desing",
-    pjDescription:
-      "Classroom support tool, specified for middle shools (Parent interface).",
+    imgURL: "tic-tac-toe.png",
+    imgAlt: "Tic tac toe game picture",
+    pjName: "Realtime Multiplayer tic-tac-toe",
+    pjDescription: "Tic-tac-toe game with realtime firebase database.",
     pjPreviewURL:
       "https://www.figma.com/file/gGL9Tf7rYYYC0NbrqwCYKq/MentorBase-Student?node-id=0%3A1",
     pjGitHubURL: null,
-    techUsed: ["Figma", "HTML", "CSS", "UI-design"],
+    techUsed: ["Firebase", "Realtime DB", "Next.js", "Vercel"],
   },
   {
     imgURL: "word-counter-pic.png",
