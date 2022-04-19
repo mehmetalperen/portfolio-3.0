@@ -73,9 +73,8 @@ export default [
     imgAlt: "Tic tac toe game picture",
     pjName: "Realtime Multiplayer tic-tac-toe",
     pjDescription: "Tic-tac-toe game with realtime firebase database.",
-    pjPreviewURL:
-      "https://www.figma.com/file/gGL9Tf7rYYYC0NbrqwCYKq/MentorBase-Student?node-id=0%3A1",
-    pjGitHubURL: null,
+    pjPreviewURL: "https://tic-tac-toe-firebase.vercel.app/",
+    pjGitHubURL: "https://github.com/mehmetalperen/tic-tac-toe-firebase",
     techUsed: ["Firebase", "Realtime DB", "Next.js", "Vercel"],
   },
   {
