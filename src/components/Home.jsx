@@ -45,15 +45,11 @@ export default function Home() {
           align-items: flex-end;
           min-width: fit-content;
           margin: 5% 0;
-          border-color: blue;
-          border-width: 2px;
         }
 
         .img-wrapper {
           margin: 0 5% 0 0;
           min-width: 250px;
-          border-color: orange;
-          border-width: 2px;
         }
 
         .greeding-wrapper {
@@ -62,7 +58,6 @@ export default function Home() {
         .pic {
           max-width: 250px;
           height: auto;
-          border-width: 2px;
         }
 
         .greeting-title {
