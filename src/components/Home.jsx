@@ -14,7 +14,7 @@ export default function Home() {
         </p>
         <p className="into-paragraph">
           I love creating UI designs and bringing them to life with the magic of
-          React, JS, CSS, HTML, Material-UI, Boostrap, Redux, and Python.
+          React, JS, CSS, HTML, Material-UI, Bootstrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
           {/* <Link to="contact-section-id" duration={500}> */}
@@ -57,6 +57,7 @@ export default function Home() {
         }
         .pic {
           max-width: 250px;
+          height: auto;
         }
 
         .greeting-title {
@@ -100,10 +101,7 @@ export default function Home() {
             justify-content: center;
           }
           .img-wrapper {
-            width: 100%;
             margin: 0 0 50px 0;
-            display: flex;
-            justify-content: center;
           }
           .greeding-wrapper {
             min-width: 100%;
