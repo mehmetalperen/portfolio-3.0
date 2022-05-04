@@ -59,8 +59,8 @@ export default [
   },
   {
     imgURL: "mentor-base-student-pic.png",
-    imgAlt: "Mentor-base figma desing",
-    pjName: "MentorBase, Desing",
+    imgAlt: "Mentor-base figma design",
+    pjName: "MentorBase, Design",
     pjDescription:
       "Classroom support tool, specified for middle shools (Student interface).",
     pjPreviewURL:
