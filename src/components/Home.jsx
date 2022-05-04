@@ -10,11 +10,11 @@ export default function Home() {
       <div className="greeding-wrapper">
         <h3 className="greeting-title">Hi, I'm Mehmet</h3>
         <p className="brief-intro">
-          Software Developer, second-year Computer Science major.
+          Software Developer, junior at UC Irvine majoring in Computer Science.
         </p>
         <p className="into-paragraph">
           I love creating UI designs and bringing them to life with the magic of
-          React, JS, CSS, HTML, Material-UI, Bootstrap, Redux, and Python.
+          React, JS, CSS, HTML, Bootstrap, Redux, and Python.
         </p>
         <div className="button-wrapper">
           {/* <Link to="contact-section-id" duration={500}> */}
