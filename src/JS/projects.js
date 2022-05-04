@@ -59,8 +59,8 @@ export default [
   },
   {
     imgURL: "mentor-base-student-pic.png",
-    imgAlt: "Mentor-base figma desing",
-    pjName: "MentorBase, Desing",
+    imgAlt: "Mentor-base figma design",
+    pjName: "MentorBase, Design",
     pjDescription:
       "Classroom support tool, specified for middle shools (Student interface).",
     pjPreviewURL:
@@ -109,7 +109,7 @@ export default [
   {
     imgURL: "hungary-app-pic.png",
     imgAlt: "Picture of an recipe app that shows how it works",
-    pjName: "Hungary, Hobby",
+    pjName: "Hungry, Hobby",
     pjDescription: "A recipe app with simple instructions and video support.",
     pjPreviewURL: "https://unruffled-wiles-bb251b.netlify.app/",
     pjGitHubURL: "https://github.com/mehmetalperen/recepie-app",
