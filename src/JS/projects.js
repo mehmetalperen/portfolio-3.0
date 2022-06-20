@@ -106,15 +106,15 @@ export default [
     pjGitHubURL: "https://github.com/mehmetalperen/snake-game",
     techUsed: ["JavaScript", "OOP", "Boostrap", "HTML", "CSS", "Git", "GitHub"],
   },
-  {
-    imgURL: "hungary-app-pic.png",
-    imgAlt: "Picture of an recipe app that shows how it works",
-    pjName: "Hungry, Hobby",
-    pjDescription: "A recipe app with simple instructions and video support.",
-    pjPreviewURL: "https://unruffled-wiles-bb251b.netlify.app/",
-    pjGitHubURL: "https://github.com/mehmetalperen/recepie-app",
-    techUsed: ["React", "Material-ui", "HTML", "CSS", "Git", "GitHub"],
-  },
+  // {
+  //   imgURL: "hungary-app-pic.png",
+  //   imgAlt: "Picture of an recipe app that shows how it works",
+  //   pjName: "Hungry, Hobby",
+  //   pjDescription: "A recipe app with simple instructions and video support.",
+  //   pjPreviewURL: "https://unruffled-wiles-bb251b.netlify.app/",
+  //   pjGitHubURL: "https://github.com/mehmetalperen/recepie-app",
+  //   techUsed: ["React", "Material-ui", "HTML", "CSS", "Git", "GitHub"],
+  // },
 ];
 
 /**
