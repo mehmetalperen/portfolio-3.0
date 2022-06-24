@@ -92,7 +92,8 @@ export default [
     pjName: "Natural Selection Simulation, Hobby",
     pjDescription:
       "One of the projects I did for fun. I practiced my OOP skills.",
-    pjPreviewURL: null,
+    pjPreviewURL:
+      "https://mehmetalperen.github.io/natural-selection-simulation/",
     pjGitHubURL:
       "https://github.com/mehmetalperen/natural-selection-simulation/tree/master/natural-selection",
     techUsed: ["JavaScript", "HTML", "CSS", "Git", "GitHub"],
