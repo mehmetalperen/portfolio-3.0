@@ -95,7 +95,7 @@ export default [
     pjPreviewURL:
       "https://mehmetalperen.github.io/natural-selection-simulation/",
     pjGitHubURL:
-      "https://github.com/mehmetalperen/natural-selection-simulation/tree/master/natural-selection",
+      "https://github.com/mehmetalperen/natural-selection-simulation",
     techUsed: ["JavaScript", "HTML", "CSS", "Git", "GitHub"],
   },
   {
