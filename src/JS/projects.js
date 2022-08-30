@@ -71,8 +71,9 @@ export default [
   {
     imgURL: "tic-tac-toe.png",
     imgAlt: "Tic tac toe game picture",
-    pjName: "Realtime Multiplayer tic-tac-toe",
-    pjDescription: "Tic-tac-toe game with realtime firebase database.",
+    pjName: "Multiplayer tic-tac-toe, Hobby",
+    pjDescription:
+      "Multiplayer tic-tac-toe game with realtime firebase database.",
     pjPreviewURL: "https://tic-tac-toe-firebase.vercel.app/",
     pjGitHubURL: "https://github.com/mehmetalperen/tic-tac-toe-firebase",
     techUsed: ["Firebase", "Realtime DB", "Next.js", "Vercel"],
@@ -83,7 +84,7 @@ export default [
     pjName: "WordCounter, Hobby",
     pjDescription: "A word/sentence/paragraph counter",
     pjPreviewURL: "https://upbeat-aryabhata-595ba2.netlify.app/",
-    pjGitHubURL: "https://github.com/mehmetalperen/WordCounter",
+    pjGitHubURL: null, //"https://github.com/mehmetalperen/WordCounter",
     techUsed: ["JavaScript", "HTML", "CSS", "Git", "GitHub"],
   },
   {
