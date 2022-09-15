@@ -1,5 +1,22 @@
 export default [
   {
+    imgURL: "avocore-pic.png",
+    imgAlt: "Avocore landing page image.",
+    pjName: "Avocore, Intership",
+    pjDescription: "Chrome Extension for Amazon sellers.",
+    pjPreviewURL: "https://avocore.com/",
+    pjGitHubURL: null,
+    techUsed: [
+      "Chrome Extension",
+      "JavaScript",
+      "HTML",
+      "Git",
+
+      "Documentation",
+      "Azure DevOps ",
+    ],
+  },
+  {
     imgURL: "counselHero-pic.png",
     imgAlt: "counsel hero landing page image.",
     pjName: "CounselHero, Intership",
@@ -16,7 +33,8 @@ export default [
       "HTML",
       "Git",
       "GitHub",
-      "Collaborative Programmig",
+      "Collaborative Programming",
+      "Documentation",
     ],
   },
   {
@@ -34,7 +52,7 @@ export default [
       "Git",
       "GitHub",
       "Research",
-      "Collaborative Programmig",
+      "Collaborative Programming",
     ],
   },
   {
@@ -54,7 +72,7 @@ export default [
       "CSS",
       "Git",
       "GitHub",
-      "Collaborative Programmig",
+      "Collaborative Programming",
     ],
   },
   {
