@@ -1,5 +1,21 @@
 export default [
   {
+    imgURL: "avocore-pic.png",
+    imgAlt: "Avocore landing page image.",
+    pjName: "Avocore, Intership",
+    pjDescription: "Chrome Extension for Amazon sellers.",
+    pjPreviewURL: "https://avocore.com/",
+    pjGitHubURL: null,
+    techUsed: [
+      "Chrome Extension",
+      "JavaScript",
+      "HTML",
+      "Git",
+      "Documentation",
+      "Azure DevOps ",
+    ],
+  },
+  {
     imgURL: "counselHero-pic.png",
     imgAlt: "counsel hero landing page image.",
     pjName: "CounselHero, Intership",
@@ -16,7 +32,8 @@ export default [
       "HTML",
       "Git",
       "GitHub",
-      "Collaborative Programmig",
+      "Collaborative Programming",
+      "Documentation",
     ],
   },
   {
@@ -34,7 +51,7 @@ export default [
       "Git",
       "GitHub",
       "Research",
-      "Collaborative Programmig",
+      "Collaborative Programming",
     ],
   },
   {
@@ -54,7 +71,7 @@ export default [
       "CSS",
       "Git",
       "GitHub",
-      "Collaborative Programmig",
+      "Collaborative Programming",
     ],
   },
   {
@@ -71,8 +88,9 @@ export default [
   {
     imgURL: "tic-tac-toe.png",
     imgAlt: "Tic tac toe game picture",
-    pjName: "Realtime Multiplayer tic-tac-toe",
-    pjDescription: "Tic-tac-toe game with realtime firebase database.",
+    pjName: "Multiplayer tic-tac-toe, Hobby",
+    pjDescription:
+      "Multiplayer tic-tac-toe game with realtime firebase database.",
     pjPreviewURL: "https://tic-tac-toe-firebase.vercel.app/",
     pjGitHubURL: "https://github.com/mehmetalperen/tic-tac-toe-firebase",
     techUsed: ["Firebase", "Realtime DB", "Next.js", "Vercel"],
@@ -83,7 +101,7 @@ export default [
     pjName: "WordCounter, Hobby",
     pjDescription: "A word/sentence/paragraph counter",
     pjPreviewURL: "https://upbeat-aryabhata-595ba2.netlify.app/",
-    pjGitHubURL: "https://github.com/mehmetalperen/WordCounter",
+    pjGitHubURL: null, //"https://github.com/mehmetalperen/WordCounter",
     techUsed: ["JavaScript", "HTML", "CSS", "Git", "GitHub"],
   },
   {

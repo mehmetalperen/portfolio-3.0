@@ -14,7 +14,7 @@ export default function Home() {
         </p>
         <p className="into-paragraph">
           I love creating UI designs and bringing them to life with the magic of
-          React, JS, CSS, HTML, Bootstrap, Redux, and Python.
+          React, CSS, HTML, Python and more.
         </p>
         <div className="button-wrapper">
           {/* <Link to="contact-section-id" duration={500}> */}
