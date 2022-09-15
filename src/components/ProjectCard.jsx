@@ -112,6 +112,7 @@ export default function ProjectCard(props) {
           flex-wrap: nowrap;
           margin: 20px auto;
           min-width: 300px;
+          max-width: 450px;
           width: 20%;
           align-items: stretch;
         }
