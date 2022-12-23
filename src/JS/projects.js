@@ -75,15 +75,23 @@ export default [
     ],
   },
   {
-    imgURL: "mentor-base-student-pic.png",
-    imgAlt: "Mentor-base figma design",
-    pjName: "MentorBase, Design",
-    pjDescription:
-      "Classroom support tool, specified for middle shools (Student interface).",
-    pjPreviewURL:
-      "https://www.figma.com/file/gGL9Tf7rYYYC0NbrqwCYKq/MentorBase-Student?node-id=0%3A1",
+    imgURL: "combination-solver.png",
+    imgAlt: "Combination puzzle solver app preview image.",
+    pjName: "Combination Puzzle Solver, Hobby/School",
+    pjDescription: "Combination puzzle solver.",
+    pjPreviewURL: "https://combinotorial-puzzle-solver.vercel.app/",
     pjGitHubURL: null,
-    techUsed: ["Figma", "HTML", "CSS", "UI-design"],
+    techUsed: [
+      "React",
+      "Data Structures and Algorithm",
+      "Recursion",
+      "Boostrap",
+      "Figma",
+      "HTML",
+      "CSS",
+      "Git",
+      "GitHub",
+    ],
   },
   {
     imgURL: "tic-tac-toe.png",
@@ -124,6 +132,17 @@ export default [
     pjPreviewURL: "https://mehmetalperen.github.io/snake-game/",
     pjGitHubURL: "https://github.com/mehmetalperen/snake-game",
     techUsed: ["JavaScript", "OOP", "Boostrap", "HTML", "CSS", "Git", "GitHub"],
+  },
+  {
+    imgURL: "mentor-base-student-pic.png",
+    imgAlt: "Mentor-base figma design",
+    pjName: "MentorBase, Design",
+    pjDescription:
+      "Classroom support tool, specified for middle shools (Student interface).",
+    pjPreviewURL:
+      "https://www.figma.com/file/gGL9Tf7rYYYC0NbrqwCYKq/MentorBase-Student?node-id=0%3A1",
+    pjGitHubURL: null,
+    techUsed: ["Figma", "HTML", "CSS", "UI-design"],
   },
   // {
   //   imgURL: "hungary-app-pic.png",

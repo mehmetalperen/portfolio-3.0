@@ -10,7 +10,7 @@ export default function Contact() {
 
       <div className="contact-wrapper">
         <a
-          href="mailto:mehmetnadi.real@gmail.com"
+          href="mailto:mnadi@uci.edu"
           className="contact-href"
           data-splitbee-event="Button Click"
           data-splitbee-event-planType="email btn"
