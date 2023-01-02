@@ -35,6 +35,15 @@ export default function Contact() {
         >
           <img src="github.svg" alt="" className="contact-icon" />
         </a>
+        <a
+          data-splitbee-event="Button Click"
+          data-splitbee-event-planType="blog btn"
+          href="https://www.mehmetnadiblog.com/"
+          target="_blank"
+          className="contact-href"
+        >
+          <img src="iconbook.svg" alt="" className="contact-icon" />
+        </a>
       </div>
       <style jsx>{`
         .contact-wrapper {
