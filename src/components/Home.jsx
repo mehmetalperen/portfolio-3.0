@@ -1,11 +1,19 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React, { useState } from "react";
+import PlaceholderProfilePic from "./PlaceholderProfilePic";
 
 export default function Home() {
+  const [isProfilePicLoaded, setIsProfilePicLoaded] = useState(false);
   return (
     <div id="home-id" className="home">
       <div className="img-wrapper">
-        <img src="my-pic.jpg" alt="my profile picture" className="pic" />
+        {isProfilePicLoaded ? null : <PlaceholderProfilePic />}
+        <img
+          src="my-pic.jpg"
+          alt="my profile picture"
+          className="pic"
+          style={isProfilePicLoaded ? {} : { display: "none" }}
+          onLoad={() => setIsProfilePicLoaded(true)}
+        />
       </div>
       <div className="greeding-wrapper">
         <h3 className="greeting-title">Hi, I'm Mehmet</h3>

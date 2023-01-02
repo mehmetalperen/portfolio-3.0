@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import TagWrapper from "./TagWrapper";
 import { Collapse } from "react-bootstrap";
+import ProjectPicturePlaceholder from "./ProjectPicturePlaceholder";
 
 export default function ProjectCard(props) {
   const [isShowMoreTags, setIsShowMoreTags] = useState(false);
-
+  const [isProjectImgLoaded, setIsProjectImgLoaded] = useState(false);
   useEffect(() => {
     if (props.projectObj.techUsed.length > 5) {
       setIsShowMoreTags(false);
@@ -16,6 +17,7 @@ export default function ProjectCard(props) {
   };
   return (
     <div className="project-card card border-0 m-3 mt-3 flex-fill">
+      {isProjectImgLoaded ? null : <ProjectPicturePlaceholder />}
       <div className="pj-img-wrapper">
         <div className="pj-img-container">
           <div className="img-filter"></div>
@@ -23,6 +25,8 @@ export default function ProjectCard(props) {
             src={props.projectObj.imgURL}
             alt={props.projectObj.imgAlt}
             className="pj-img"
+            style={isProjectImgLoaded ? {} : { display: "none" }}
+            onLoad={() => setIsProjectImgLoaded(true)}
           />
         </div>
       </div>
