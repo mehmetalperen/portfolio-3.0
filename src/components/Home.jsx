@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div id="home-id" className="home">
       <div className="img-wrapper">
-        <img src="my-pic.jpg" alt="" className="pic" />
+        <img src="my-pic.jpg" alt="my profile picture" className="pic" />
       </div>
       <div className="greeding-wrapper">
         <h3 className="greeting-title">Hi, I'm Mehmet</h3>
