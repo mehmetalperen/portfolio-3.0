@@ -182,25 +182,21 @@ export default function ProjectCard(props) {
           margin: 6px 0;
         }
 
-        .pj-action-btn-container {
+        .project-card .pj-action-btn-container {
           display: flex;
           padding: 0;
           justify-content: space-between;
           overflow: hidden;
           margin: 6px 0;
           align-items: end;
-          opacity: 0;
-          height: 0;
-          visibility: hidden;
-          -webkit-transition: opacity 1000ms ease-out,
-            visibility 1000ms ease-out, height 1000ms ease-out;
-          transition: opacity 1000ms ease-out, visibility 1000ms ease-out,
-            height 1000ms ease-out;
+          max-height: 0;
+          transition: max-height 0.15s ease-out;
         }
+
         .project-card:hover .pj-action-btn-container {
           visibility: visible;
-          opacity: 1;
-          height: auto;
+          max-height: 500px;
+          transition: max-height 0.25s ease-in;
         }
         .pj-action-btns {
           width: 45%;
