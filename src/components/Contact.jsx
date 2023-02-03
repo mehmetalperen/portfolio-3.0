@@ -61,8 +61,7 @@ export default function Contact() {
           margin: 30px;
         }
         .contact-href:hover {
-          opacity: 0.6;
-          transform: scale(1.1);
+          opacity: 0.5;
         }
       `}</style>
     </div>
