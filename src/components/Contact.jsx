@@ -20,6 +20,15 @@ export default function Contact() {
         <a
           data-splitbee-event="Button Click"
           data-splitbee-event-planType="linkedin btn"
+          href="https://teal-zabaione-d1a1f5.netlify.app/"
+          target="_blank"
+          className="contact-href"
+        >
+          <img src="message-square-lines.svg" alt="" className="contact-icon" />
+        </a>
+        <a
+          data-splitbee-event="Button Click"
+          data-splitbee-event-planType="linkedin btn"
           href="https://www.linkedin.com/in/mehmet-nadi-03372a1b1/"
           target="_blank"
           className="contact-href"
