@@ -2,7 +2,7 @@ export default [
   {
     imgURL: "avocore-pic.png",
     imgAlt: "Avocore landing page image.",
-    pjName: "Avocore, Intership",
+    pjName: "Avocore, Internship",
     pjDescription: "Chrome Extension for Amazon sellers.",
     pjPreviewURL: "https://avocore.com/",
     pjGitHubURL: null,
@@ -18,7 +18,7 @@ export default [
   {
     imgURL: "counselHero-pic.png",
     imgAlt: "counsel hero landing page image.",
-    pjName: "CounselHero, Intership",
+    pjName: "CounselHero, Internship",
     pjDescription: "An education tool that automates counseling for students.",
     pjPreviewURL: "https://www.counselhero.com/",
     pjGitHubURL: null,
