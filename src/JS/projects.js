@@ -3,7 +3,8 @@ export default [
     imgURL: "avocore-pic.png",
     imgAlt: "Avocore landing page image.",
     pjName: "Avocore, Internship",
-    pjDescription: "Chrome Extension for Amazon sellers.",
+    pjDescription:
+      "Built a Chrome extension to increase the productivity of Amazon sellers.",
     pjPreviewURL: "https://avocore.com/",
     pjGitHubURL: null,
     techUsed: [
@@ -19,7 +20,8 @@ export default [
     imgURL: "counselHero-pic.png",
     imgAlt: "counsel hero landing page image.",
     pjName: "CounselHero, Internship",
-    pjDescription: "An education tool that automates counseling for students.",
+    pjDescription:
+      "Worked on an education tool that automates counseling for students.",
     pjPreviewURL: "https://www.counselhero.com/",
     pjGitHubURL: null,
     techUsed: [
@@ -34,6 +36,7 @@ export default [
       "GitHub",
       "Collaborative Programming",
       "Documentation",
+      "Figma",
     ],
   },
   {
@@ -78,7 +81,7 @@ export default [
     imgURL: "combination-solver.png",
     imgAlt: "Combination puzzle solver app preview image.",
     pjName: "Combination Puzzle Solver, Hobby/School",
-    pjDescription: "Combination puzzle solver.",
+    pjDescription: "Visualizing recursive algorithm learned at school.",
     pjPreviewURL: "https://combinotorial-puzzle-solver.vercel.app/",
     pjGitHubURL: null,
     techUsed: [
@@ -93,21 +96,21 @@ export default [
       "GitHub",
     ],
   },
-  {
-    imgURL: "tic-tac-toe.png",
-    imgAlt: "Tic tac toe game picture",
-    pjName: "Multiplayer tic-tac-toe, Hobby",
-    pjDescription:
-      "Multiplayer tic-tac-toe game with realtime firebase database.",
-    pjPreviewURL: "https://tic-tac-toe-firebase.vercel.app/",
-    pjGitHubURL: "https://github.com/mehmetalperen/tic-tac-toe-firebase",
-    techUsed: ["Firebase", "Realtime DB", "Next.js", "Vercel"],
-  },
+  // {
+  //   imgURL: "tic-tac-toe.png",
+  //   imgAlt: "Tic tac toe game picture",
+  //   pjName: "Multiplayer tic-tac-toe, Hobby",
+  //   pjDescription:
+  //     "Multiplayer tic-tac-toe game with realtime firebase database.",
+  //   pjPreviewURL: "https://tic-tac-toe-firebase.vercel.app/",
+  //   pjGitHubURL: "https://github.com/mehmetalperen/tic-tac-toe-firebase",
+  //   techUsed: ["Firebase", "Realtime DB", "Next.js", "Vercel"],
+  // },
   {
     imgURL: "word-counter-pic.png",
     imgAlt: "word-counter app picture that show how it works",
     pjName: "WordCounter, Hobby",
-    pjDescription: "A word/sentence/paragraph counter",
+    pjDescription: "A word/sentence/paragraph counter.",
     pjPreviewURL: "https://upbeat-aryabhata-595ba2.netlify.app/",
     pjGitHubURL: null, //"https://github.com/mehmetalperen/WordCounter",
     techUsed: ["JavaScript", "HTML", "CSS", "Git", "GitHub"],
