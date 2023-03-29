@@ -19,8 +19,8 @@ export default function Contact() {
         </a>
         <a
           data-splitbee-event="Button Click"
-          data-splitbee-event-planType="linkedin btn"
-          href="https://teal-zabaione-d1a1f5.netlify.app/"
+          data-splitbee-event-planType="msg me btn"
+          href="https://chatmehmetnadi.com"
           target="_blank"
           className="contact-href"
         >
