@@ -95,7 +95,6 @@ export default [
       "Firebase Hosting",
       "HTML/CSS",
       "Boostrap",
-      ,
       "Sendgrid",
     ],
   },
