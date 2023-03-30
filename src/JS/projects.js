@@ -78,6 +78,28 @@ export default [
     ],
   },
   {
+    imgURL: "chat-mehmet.png",
+    imgAlt: "Chat Mehmet application page image.",
+    pjName: "ChatMehmet, Hobby",
+    pjDescription:
+      "A messaging platform for people who would like to get in touch with me.",
+    pjPreviewURL: "https://chatmehmetnadi.com/",
+    pjGitHubURL: "https://github.com/mehmetalperen/portfolio-chat-frontend",
+    techUsed: [
+      "React",
+
+      "Firebase Database",
+      "Firebase Authentication",
+      "Firebase Cloud Funtions",
+      "Firebase Hosting",
+      "Firebase Hosting",
+      "HTML/CSS",
+      "Boostrap",
+      ,
+      "Sendgrid",
+    ],
+  },
+  {
     imgURL: "combination-solver.png",
     imgAlt: "Combination puzzle solver app preview image.",
     pjName: "Combination Puzzle Solver, Hobby/School",
