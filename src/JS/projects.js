@@ -104,7 +104,7 @@ export default [
     pjName: "Combination Puzzle Solver, Hobby/School",
     pjDescription: "Visualizing recursive algorithm learned at school.",
     pjPreviewURL: "https://combinotorial-puzzle-solver.vercel.app/",
-    pjGitHubURL: null,
+    pjGitHubURL: "https://github.com/mehmetalperen/combinotorial-puzzle-solver",
     techUsed: [
       "React",
       "Data Structures and Algorithm",
