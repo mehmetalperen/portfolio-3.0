@@ -15,7 +15,9 @@ export default function Contact() {
           data-splitbee-event="Button Click"
           data-splitbee-event-planType="email btn"
         >
-          <img src="email 1.svg" alt="" className="contact-icon" />
+          <img src="mail.svg" alt="" className="contact-icon" />
+          <div className="contact-text">Email</div>
+
         </a>
         <a
           data-splitbee-event="Button Click"
@@ -25,6 +27,8 @@ export default function Contact() {
           className="contact-href"
         >
           <img src="message-square-lines.svg" alt="" className="contact-icon" />
+          <div className="contact-text">Message</div>
+
         </a>
         <a
           data-splitbee-event="Button Click"
@@ -33,7 +37,9 @@ export default function Contact() {
           target="_blank"
           className="contact-href"
         >
-          <img src="linkedin 1.svg" alt="" className="contact-icon" />
+          <img src="linkedin.svg" alt="" className="contact-icon" />
+          <div className="contact-text">Linkedin</div>
+
         </a>
         <a
           data-splitbee-event="Button Click"
@@ -42,7 +48,9 @@ export default function Contact() {
           target="_blank"
           className="contact-href"
         >
-          <img src="github.svg" alt="" className="contact-icon" />
+          <img src="github 1.svg" alt="" className="contact-icon" />
+          <div className="contact-text">Github</div>
+
         </a>
         {/* <a
           data-splitbee-event="Button Click"
@@ -65,12 +73,17 @@ export default function Contact() {
         }
         .contact-href {
           margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
         .contact-icon {
-          margin: 30px;
+          margin: 30px 30px 0 30px;
         }
         .contact-href:hover {
           opacity: 0.5;
+          margin-top: 5px; 
         }
       `}</style>
     </div>
