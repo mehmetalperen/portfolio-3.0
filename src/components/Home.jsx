@@ -18,14 +18,12 @@ export default function Home() {
       <div className="greeding-wrapper">
         <h3 className="greeting-title">Hi, I'm Mehmet</h3>
         <p className="brief-intro">
-          Software Developer, junior at UC Irvine majoring in Computer Science.
+          <b><u>Software engineer</u></b>, senior at UC Irvine majoring in Computer Science.
         </p>
         <p className="into-paragraph">
-          I love creating UI designs and bringing them to life with the magic of
-          React, CSS, HTML, Python and more.
+          I love creating <b><u>full stack</u></b> applications and solving problems with the magic of software.
         </p>
         <div className="button-wrapper">
-          {/* <Link to="contact-section-id" duration={500}> */}
           <a
             href="#contact-section-id"
             className="btn btn-dark home-btns"
@@ -52,7 +50,7 @@ export default function Home() {
           display: flex;
           align-items: flex-end;
           min-width: fit-content;
-          margin: 5% 0;
+          margin: 2% 0;
         }
 
         .img-wrapper {
@@ -64,7 +62,7 @@ export default function Home() {
           max-width: 680px;
         }
         .pic {
-          max-width: 250px;
+          max-width: 265px;
           height: auto;
         }
 
@@ -79,7 +77,7 @@ export default function Home() {
         .brief-intro {
           font-style: normal;
           font-weight: 500;
-          font-size: 17px;
+          font-size: 19px;
           display: flex;
           flex-wrap: wrap;
           word-wrap: break-word;
