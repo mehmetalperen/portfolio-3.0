@@ -26,19 +26,27 @@ h1:hover {
   cursor: pointer;
 }
 .btn {
-  padding: 15px;
+  padding: 5px;
   border-radius: 10px;
 }
 .btn-dark:hover {
-  background-color: #6c757d;
+  background-color: #e2e4e5;
   border-color: #6c757d;
+  color: black;
 }
+
+.btn-dark:hover .visit-site-icon #icon {
+  fill: black;
+}
+
+
 .btn-dark {
   width: 200px;
 }
 .btn-outline-dark:hover {
-  background-color: #6c757d;
+  background-color: #e2e4e5;
   border-color: #6c757d;
+  color: black;
 }
 .btn-outline-dark {
   width: 200px;

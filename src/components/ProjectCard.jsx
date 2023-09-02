@@ -89,15 +89,13 @@ export default function ProjectCard(props) {
             props.projectObj.pjPreviewURL === null ? "disabledBtn" : ""
           }`}
         >
-          <img
-            src={
-              props.projectObj.pjPreviewURL === null
-                ? "black-preview-icon.svg"
-                : "eye 1.svg"
-            }
-            alt=""
-            className="btn-icon"
-          />
+
+          <svg className="visit-site-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="24 / basic / external-link">
+              <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M11.7042 13.7071L18.9971 6.41421V11H20.9971V3H12.9971V5H17.5829L10.29 12.2929L11.7042 13.7071ZM19 19V14H17V19H5V7H10V5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21H17C18.1046 21 19 20.1046 19 19Z" fill="white"/>
+              </g>
+          </svg>
+          {` Visit Site`}
         </a>
         <a
           data-splitbee-event="Button Click"
@@ -108,7 +106,17 @@ export default function ProjectCard(props) {
             props.projectObj.pjGitHubURL === null ? "disabledBtn" : ""
           }`}
         >
-          <img src="github 1.svg" alt="" className="btn-icon" />
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_24_69)">
+                <path d="M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22M9 19C4 20.5 4 16.5 2 16L9 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_24_69">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+          </svg>
+          {props.projectObj.pjGitHubURL === null ? " Private" : " Code" }
         </a>
       </div>
       <style jsx>{`
@@ -206,16 +214,28 @@ export default function ProjectCard(props) {
           box-shadow: none;
         }
         .disabledBtn {
-          border: 1px solid #adb5bd;
-          background: repeating-linear-gradient(
-            45deg,
-            #6c757d,
-            #6c757d 10px,
-            #adb5bd 10px,
-            #adb5bd 20px
-          );
+          border: 1px solid #E9E9E9;
+          background: #E9E9E9;
+          color: black;
           pointer-events: none;
           cursor: not-allowed;
+
+        }
+        .disabledBtn:hover{
+          border: 1px solid #E9E9E9;
+          background: #414548;
+          color:black;
+          pointer-events: none;
+          cursor: not-allowed;
+
+        }
+        @media only screen and (max-width: 1245px) {
+          .project-card .pj-action-btn-container,
+          .project-card:hover .pj-action-btn-container {
+            visibility: visible;
+            max-height: 500px;
+            transition: none;
+          }
         }
         @media only screen and (max-width: 870px) {
           .pj-action-btn-container {
@@ -228,6 +248,7 @@ export default function ProjectCard(props) {
             opacity: 1;
             height: 100%;
             visibility: visible;
+            max-height: 500px;
           }
         }
       `}</style>
