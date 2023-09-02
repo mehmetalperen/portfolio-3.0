@@ -18,7 +18,7 @@ export default function Home() {
       <div className="greeding-wrapper">
         <h3 className="greeting-title">Hi, I'm Mehmet</h3>
         <p className="brief-intro">
-          <b><u>Software engineer</u></b>, senior at UC Irvine majoring in Computer Science.
+          <b><u>Software engineer,</u></b> senior at UC Irvine majoring in Computer Science.
         </p>
         <p className="into-paragraph">
           I love creating <b><u>full stack</u></b> applications and solving problems with the magic of software.
