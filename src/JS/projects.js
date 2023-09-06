@@ -4,7 +4,7 @@ export default [
     imgAlt: "Aveva landing page image.",
     pjName: "Aveva, Internship",
     pjDescription:
-    "Developed reporting tools for management and QA engineers.",
+    "Developed multiple tools for management and QA engineers.",
     pjPreviewURL: "https://www.aveva.com/en/",
     pjGitHubURL: null,
     techUsed: [
