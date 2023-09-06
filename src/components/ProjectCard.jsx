@@ -92,7 +92,7 @@ export default function ProjectCard(props) {
 
           <svg className="visit-site-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="24 / basic / external-link">
-              <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M11.7042 13.7071L18.9971 6.41421V11H20.9971V3H12.9971V5H17.5829L10.29 12.2929L11.7042 13.7071ZM19 19V14H17V19H5V7H10V5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21H17C18.1046 21 19 20.1046 19 19Z" fill="white"/>
+              <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M11.7042 13.7071L18.9971 6.41421V11H20.9971V3H12.9971V5H17.5829L10.29 12.2929L11.7042 13.7071ZM19 19V14H17V19H5V7H10V5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21H17C18.1046 21 19 20.1046 19 19Z" fill={props.projectObj.pjPreviewURL === null ? "black":"white"}/>
               </g>
           </svg>
           {` Visit Site`}
@@ -214,11 +214,11 @@ export default function ProjectCard(props) {
           box-shadow: none;
         }
         .disabledBtn {
-          border: 1px solid #E9E9E9;
+          border: 1px solid #6c757d;
           background: #E9E9E9;
           color: black;
-          pointer-events: none;
           cursor: not-allowed;
+          pointer-events: none;
 
         }
         .disabledBtn:hover{
