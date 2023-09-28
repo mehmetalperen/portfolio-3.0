@@ -4,7 +4,7 @@ export default [
     imgAlt: "Aveva landing page image.",
     pjName: "Aveva, Internship",
     pjDescription:
-    "Developed reporting tools for management and QA engineers.",
+    "Developed multiple tools for management and QA engineers.",
     pjPreviewURL: "https://www.aveva.com/en/",
     pjGitHubURL: null,
     techUsed: [
@@ -194,13 +194,13 @@ export default [
     techUsed: ["JavaScript", "OOP", "Boostrap", "HTML", "CSS", "Git", "GitHub"],
   },
   {
-    imgURL: "mentor-base-student-pic.png",
-    imgAlt: "Mentor-base figma design",
-    pjName: "MentorBase, Design",
+    imgURL: "universal-commnet.png",
+    imgAlt: "Universal Comment figma design",
+    pjName: "Universal Comment, Design",
     pjDescription:
-      "Classroom support tool, specified for middle shools (Student interface).",
+      "Chrome extension idea.",
     pjPreviewURL:
-      "https://www.figma.com/file/gGL9Tf7rYYYC0NbrqwCYKq/MentorBase-Student?node-id=0%3A1",
+      "https://www.figma.com/file/o1OlmEMyRAxDCQyqApP3QT/universal-comment-Chorome-extension?type=design&node-id=0%3A1&mode=design&t=5Q8feSVR6X1i91PY-1",
     pjGitHubURL: null,
     techUsed: ["Figma", "HTML", "CSS", "UI-design"],
   },
