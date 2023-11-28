@@ -145,15 +145,21 @@ export default function ProjectCard(props) {
         }
         .pj-img-wrapper {
           width: 100%;
-          z-index: 10;
+          height: 200px; 
           background: #6c757d;
-          align-items: stretch;
+          position: relative; 
+          overflow: hidden;
         }
+
         .pj-img-container {
-          position: relative;
+          width: 100%;
+          height: 100%; 
         }
         .pj-img {
-          max-width: 100%;
+          width: 100%; 
+          height: 100%; 
+          object-fit: cover; 
+          display: block; 
         }
         .img-filter {
           width: 100%;
@@ -190,25 +196,22 @@ export default function ProjectCard(props) {
           margin: 6px 0;
         }
 
-        .project-card .pj-action-btn-container {
+        .pj-action-btn-container {
           display: flex;
-          padding: 0;
           justify-content: space-between;
+          opacity: 0;
           overflow: hidden;
-          margin: 6px 0;
           align-items: end;
-          max-height: 0;
-          transition: max-height 0.15s ease-out;
+          transition: opacity 0.15s ease-in-out;
+          min-height: 50px; 
         }
 
         .project-card:hover .pj-action-btn-container {
-          visibility: visible;
-          max-height: 500px;
-          transition: max-height 0.25s ease-in;
+          opacity: 1;
         }
+
         .pj-action-btns {
           width: 45%;
-          max-height: 60px;
         }
         .pj-action-btns:focus {
           box-shadow: none;
@@ -230,25 +233,19 @@ export default function ProjectCard(props) {
 
         }
         @media only screen and (max-width: 1245px) {
-          .project-card .pj-action-btn-container,
-          .project-card:hover .pj-action-btn-container {
-            visibility: visible;
-            max-height: 500px;
-            transition: none;
+          .pj-action-btn-container {
+            opacity: 1;
+
           }
         }
         @media only screen and (max-width: 870px) {
           .pj-action-btn-container {
             display: flex;
-            padding: 0;
             justify-content: space-between;
-            overflow: hidden;
-            margin: 6px 0;
             align-items: end;
             opacity: 1;
-            height: 100%;
             visibility: visible;
-            max-height: 500px;
+            min-height: 50px; 
           }
         }
       `}</style>
