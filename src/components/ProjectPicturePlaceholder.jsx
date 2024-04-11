@@ -7,6 +7,7 @@ export default function ProjectPicturePlaceholder() {
       <style jsx>{`
         .profile-pic-wrapper {
           width: 100%;
+          margin: 10px 5px;
           max-height: 250px;
           background-color: red;
           animation: placeholder linear 2s infinite;
