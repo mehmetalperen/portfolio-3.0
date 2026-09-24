@@ -6,8 +6,9 @@ import { formatDate, tierFromProductId } from "./constants";
 /**
  * Redemption history for one discount code: who redeemed, whether the credit is still
  * unspent or which tier (and album, via the deterministic 'promo_<id>' purchase link) it
- * bought. Read-only — per-user lifetime top-ups (promo_user_budget.bonus_redemptions) stay
- * a Table Editor affair for now.
+ * bought — with the same album stats the partner detail shows (id, guests, photos; needs
+ * ANILAR migration 0052). Read-only — per-user lifetime top-ups
+ * (promo_user_budget.bonus_redemptions) stay a Table Editor affair for now.
  */
 export default function PromoDetailModal({ show, code, onClose }) {
   const [rows, setRows] = useState(null);
@@ -52,6 +53,8 @@ export default function PromoDetailModal({ show, code, onClose }) {
                 <th>By</th>
                 <th>Spent on</th>
                 <th>Album</th>
+                <th>Guests</th>
+                <th>Photos</th>
               </tr>
             </thead>
             <tbody>
@@ -71,7 +74,20 @@ export default function PromoDetailModal({ show, code, onClose }) {
                       </Badge>
                     )}
                   </td>
-                  <td>{r.film_name || (r.film_id ? <em>deleted album</em> : "—")}</td>
+                  <td>
+                    {r.film_id ? (
+                      <>
+                        {r.film_name || <em>deleted album</em>}
+                        <div className="text-muted" style={{ fontSize: "0.72rem", fontFamily: "monospace" }}>
+                          {r.film_id}
+                        </div>
+                      </>
+                    ) : (
+                      "—"
+                    )}
+                  </td>
+                  <td>{r.guest_count ?? "—"}</td>
+                  <td>{r.photo_count ?? "—"}</td>
                 </tr>
               ))}
             </tbody>
