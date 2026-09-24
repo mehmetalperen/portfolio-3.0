@@ -5,6 +5,7 @@ import { ALLOWED_EMAIL, supabase } from "./supabase";
 import { formatDate } from "./constants";
 import CodeFormModal from "./CodeFormModal";
 import CodeDetailModal from "./CodeDetailModal";
+import PromoSection from "./PromoSection";
 
 /**
  * Kadra owner dashboard (ANILAR spec 33 §3), served only at /secretadmindashboard — linked
@@ -157,7 +158,7 @@ export default function AdminDashboard() {
   return (
     <Container className="py-4" style={{ maxWidth: 1100 }}>
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h4 className="mb-0">Kadra partner codes</h4>
+        <h4 className="mb-0">Partner codes</h4>
         <div>
           <Button
             className="me-2"
@@ -244,6 +245,8 @@ export default function AdminDashboard() {
           </tbody>
         </Table>
       )}
+
+      <PromoSection />
 
       <CodeFormModal
         show={formOpen}
