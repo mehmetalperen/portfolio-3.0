@@ -1,0 +1,7 @@
+# Keep the Kadra admin route out of every index — header-level, on top of the route's own
+# <meta name="robots"> tag. Deliberately NOT in robots.txt (a Disallow line would advertise
+# the path). ANILAR spec 33 §3.
+/secretadmindashboard
+  X-Robots-Tag: noindex, nofollow
+/secretadmindashboard/
+  X-Robots-Tag: noindex, nofollow
