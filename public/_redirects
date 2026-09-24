@@ -1,0 +1,4 @@
+# Netlify: serve the SPA on the Kadra admin route (hard refresh / direct visit). Only this
+# path — everything else keeps default static behavior. ANILAR spec 33 §3.
+/secretadmindashboard /index.html 200
+/secretadmindashboard/ /index.html 200
